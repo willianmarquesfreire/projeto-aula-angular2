@@ -1,28 +1,21 @@
-import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-meu-componente',
   template: `
-    <p>Meu nome é {{nome}}.</p>
-    <input type="text" [value]="valor" readonly>
-    <button type="button" (click)="incrementaValor()">Incrementar Valor</button>
+    <p #meuNome>Meu nome é {{nome}}.</p>
   `,
   styleUrls: ['./meu-componente.component.css']
 })
 export class MeuComponenteComponent implements OnInit {
 
-  valor: number = 0;
-  @Input("nome") nome: String = "";
-  @Output("mudouValor") mudouValor = new EventEmitter();
+  nome: String = "Munif Gebara Júnior";
+  @ViewChild("meuNome") meuNome: HTMLElement;
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  incrementaValor() {
-    this.valor++;
-    this.mudouValor.emit({valor: this.valor});
+    console.log(this.meuNome)
   }
 
 }
