@@ -8,6 +8,7 @@ declare let window:Window;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  dataNascimento: Date = new Date()
   title = 'app works!';
 
 }

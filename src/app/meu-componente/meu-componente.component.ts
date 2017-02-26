@@ -13,7 +13,6 @@ export class MeuComponenteComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.meuNome)
   }
 
 }

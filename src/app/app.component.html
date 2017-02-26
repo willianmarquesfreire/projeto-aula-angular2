@@ -1,4 +1,6 @@
 <h1>
-  {{title}}
+  {{dataNascimento | date:'dd-MMM-yyyy'}}<br>
+  {{ 'meufiltro' | meuPipe:'todasMaiscula'}}
+
   <app-meu-componente></app-meu-componente>
 </h1>

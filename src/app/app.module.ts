@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MeuComponenteComponent } from './meu-componente/meu-componente.component';
 import { MinhaDiretivaDirective } from './meu-componente/minha-diretiva.directive';
+import { MeuPipePipe } from './meu-componente/meu-pipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MeuComponenteComponent,
-    MinhaDiretivaDirective
+    MinhaDiretivaDirective,
+    MeuPipePipe
   ],
   imports: [
     BrowserModule,
