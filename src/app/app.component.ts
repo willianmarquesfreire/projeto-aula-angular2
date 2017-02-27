@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
+import { CanActivate, CanLoad, Router } from '@angular/router';
 
-declare let window:Window;
+declare var window;
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,11 @@ declare let window:Window;
 export class AppComponent {
   title = 'app works!';
 
-  onValor(event) {
-    window.alert("Recebi de meu-componente o valor: " + event.valor)
+  constructor(private router: Router) {
+
+  }
+
+  logout() {
+    window.localStorage.removeItem('user');
   }
 }

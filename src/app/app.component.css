@@ -1,0 +1,28 @@
+.faype-container {
+   position: fixed;
+   height: 100%;
+   min-height: 100%;
+   width: 100%;
+   min-width: 100%;
+   margin: 0px;
+}
+
+.faype-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.faype-sidenav {
+  padding: 20px;
+}
+
+.faype-btn-open-menu {
+    margin-right: 10px;
+    min-width: 10px !important;
+}
+
+.faype-sidenav a {
+  color: #000;
+}

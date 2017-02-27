@@ -1,0 +1,10 @@
+<h3>Login</h3>
+<md-input-container>
+  <input mdInput #login type="text" placeholder="Login">
+</md-input-container>
+
+<md-input-container>
+  <input mdInput #password placeholder="Password">
+</md-input-container>
+
+<button md-button (click)="doLogin(login.value, password.value)">Sigin</button>

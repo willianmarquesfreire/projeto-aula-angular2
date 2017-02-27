@@ -1,10 +1,10 @@
-import { MeuProjetoPage } from './app.po';
+import { FaypewebStructurePage } from './app.po';
 
-describe('meu-projeto App', function() {
-  let page: MeuProjetoPage;
+describe('faypeweb-structure App', () => {
+  let page: FaypewebStructurePage;
 
   beforeEach(() => {
-    page = new MeuProjetoPage();
+    page = new FaypewebStructurePage();
   });
 
   it('should display message saying app works', () => {
